@@ -1,0 +1,32 @@
+<div class="screen">
+<% if $user['ownedMovieMon'].size != 0 %>
+<%
+@index = $user['indexMM']
+%>
+	<div class="md_desc">
+		<p id="bold">Annee:</p>
+		<p><%= $user['ownedMovieMon'][$user['indexMM']]['Year'] %></p>
+		<p id="bold">Genre:</p>
+		<p><%= $user['ownedMovieMon'][$user['indexMM']]['Genre'] %></p>
+		<p id="bold">Directeur:</p>
+		<p><%= $user['ownedMovieMon'][$user['indexMM']]['Director'] %></p>
+		<p id="bold">Rating IMDB:</p>
+		<p><%= $user['ownedMovieMon'][$user['indexMM']]['imdbRating'] %></p>
+		<p id="bold">Synopsis:</p>
+		<p><%= $user['ownedMovieMon'][$user['indexMM']]['Plot'] %></p>
+	</div>
+	<div class="film">
+		<img src="<%= $user['ownedMovieMon'][$user['indexMM']]['Poster'] %>" id="affiche">
+		<p id="title"><%= $user['ownedMovieMon'][$user['indexMM']]['Title'] %></p>
+	</div>
+	<div class="down">
+		<p id="ab">[START] Return to game</p>
+	</div>
+</div>
+<% else %>
+<p class="noMon">No Movie Mon<br />owned !</p>
+	<div class="down">
+		<p id="ab">[START] Return to game</p>
+	</div>
+
+<% end %>

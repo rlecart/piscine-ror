@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+.container
+ {
+	width: 600px;
+ 	margin: 0 auto;
+}
+
+#gameboy_skin
+{
+	position: absolute;
+}
+
+.screen
+{
+	position: absolute;
+	width: 344px;
+	height: 298px;
+	margin-top: 95px;
+	margin-left: 127px;
+	background-color: #20a006;
+}
+
+.screentitle
+{
+	font-family: 'Fredoka One', cursive;
+	font-size: 3em;
+	text-align: center;
+	color: #2d332c;
+}
+
+.screenmenu
+{
+	text-align: center;
+	margin-top: 150px;
+}
+
+#grid
+{
+	position: absolute;
+	margin-top: 95px;
+	margin-left: 127px;
+	width: 344px;
+	height: 290px;
+}
+#grid td {
+	background-color: rgba(255, 0, 0, 0.1);
+	width: 34px;
+	height: 25px;
+	text-align: center;
+}
+#megaman
+{
+	height: 20px;
+	width: 20px;
+}
+
+#fight_box
+{
+	position: absolute;
+		width: 344px;
+	height: 298px;
+	margin-top: 95px;
+	margin-left: 127px;
+	background-color: #20a006;
+}
+#fight_img
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	float: right;
+
+}
+
+.film {
+	display: block;
+	float: right;
+	text-align: center;
+	margin-right: 30px;
+	margin-top: 30px;
+	width: 160px;
+	height: 236px;
+	max-height: 216px;
+}
+
+#affiche {
+	width: 120px;
+}
+
+#title {
+	margin-top: 5px;
+	font-size: medium;
+}
+
+.md_desc {
+	display: block;
+	float: left;
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 100px;
+	height: 216px;
+	max-height: 216px;
+}
+
+.md_desc p {
+	font-size: 0.8em;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.md_desc #bold {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0;
+}
+
+.down {
+	display: block;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-top: 12px;
+	width: 282px;
+	height: 30px;
+	max-height: 216px;
+}
+
+.down #ab {
+	text-align: center;
+	margin-top: 8px;
+}
+
+.save_1 {
+	background-color: #24ce00;
+	margin-top: 60px;
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 50px;
+	width: 282px;
+	text-align: center;
+}
+
+.save_2 {
+	background-color: #187704;
+	margin-top: 10px;
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 50px;
+	width: 282px;
+	text-align: center;
+}
+
+#saves {
+	padding-top: 17px;
+	font-size: medium;
+}
+.noMon
+{
+	font-family: 'Fredoka One', cursive;
+	font-size: 1.5em;
+	text-align: center;
+}

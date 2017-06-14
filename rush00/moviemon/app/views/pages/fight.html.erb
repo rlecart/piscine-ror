@@ -1,0 +1,56 @@
+<% if $view == "fight" %>
+<% 
+puts " -------------------------    --------------------        -------------------- #{$view}"
+%>
+<div class="screen">
+	<div class="md_desc">
+		<p id="bold"><%= $game['moviemon'][-1]['Director'] %></p>
+		<p>is facing you with:<p>
+		<p><%=$game['moviemon'][-1]['Title'] %></p>
+	</div>
+	<div class="film">
+		<img src="<%= $game['moviemon'][-1]['Poster'] %>" id="affiche">
+	</div>
+	<div class="down">
+		<p id="ab">[A] FIGHT &nbsp;&nbsp;&nbsp;&nbsp; [B] Run...</p>
+	</div>
+</div>
+
+<%
+$user['enemy'] = 100
+%>
+
+
+<% elsif $view == "fightok" %>
+
+<div class="screen">
+<img id="affiche" src="<%=$game['moviemon'][-1]['Poster']%>" />
+<p>Him : <%=$user['enemy']%></p>
+<p>You : <%=$user['vie']%></p>
+
+	<div class="down">
+		[A] FIGHT
+	</div>
+
+<% elsif $view == "fightrun" %>
+<div class="screen">
+	<div class="down">
+		<p class="noMon">COWARD</p>
+		<p id="ab">[A] Return to the game</p>
+	</div>
+</div>
+
+
+<% elsif $view == "fightwon" %>
+<div class="screen">
+	<div class="down">
+		<p class="noMon">Moviemon Caught</p>
+		<p id="ab">[A] Return to the game</p>
+	</div>
+<% elsif $view == "fightlost" %>
+<div class="screen">
+	<div class="down">
+		<p class="noMon">You loooooose</p>
+		<p id="ab">[A] Return to the game</p>
+	</div>
+<% end %>
